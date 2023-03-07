@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="website icon" href="imgs/big icon.png">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Condensed&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Changa&display=swap" rel="stylesheet">
+    <title>Joo Information</title>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html" class="logo" style="height: 89px;">
+                <img src="imgs/logo!bg 1.png" style="width: 100px;">
+            </a>
+            <nav>
+                <div class="burger-icon nav-hide">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <ul id="nav-ul">
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html">Contact</a>
+                    </li>
+                    <li>
+                        <a style="cursor: pointer;" id="Other">
+                            Others
+                            <div class="big-menu">
+                                <ul>
+                                    <li>
+                                        <a href="project.html"><i class="fa-solid fa-diagram-project"></i>Projects</a>
+                                    </li>
+                                    <li>
+                                        <a href="videos.html"><i class="fa-solid fa-play"></i>Videos</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">العربيه</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <style>
+        .code .container-vid {
+            display: flex;
+            padding: 30px;
+            flex-direction: column;
+            max-width: 95%;
+            margin: auto;
+        }
+        pre {
+            height: 715px; overflow:auto; padding: 10px; color: white; font-size: 23px; background-color: #383838;
+            position: relative;
+            border-radius: 10px;
+        }
+        .link-vid1 {
+            text-align: center;
+            padding-top: 50px;
+            padding-bottom: 50px;
+            display: flex;
+            justify-content: center;
+        }
+        .link-vid1 a {
+            color: var(--main-color);
+            border: 1px solid var(--main-color);
+            padding: 20px;
+            font-size: 50px;
+            transition: 0.3s;
+            margin-left: 10px;
+        }
+        .link-vid1 a:hover {
+            background-color: var(--main-color);
+            color: white;
+        }
+        .code-box:hover .pre-btn {
+            opacity: 1;
+        }
+        .pre-btn {
+            opacity: 0;
+            position: absolute;
+            padding: 10px;
+            background: var(--main-color);
+            border-radius: 10px;
+            right: 30px;
+            top: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+            z-index: 2;
+        }
+        #code-box-color {
+            position: relative;
+        }
+        #code-box-color:hover #color {
+            display: block !important;
+        }
+        #color {
+            display: none;
+        }
+        .task {
+            color: white;
+        }
+        .task h1 {
+            font-weight: 100;
+        }
+        #active-task {
+            border: 1px solid var(--main-color);
+            padding: 20px;
+            border-radius: 20px;
+        }
+        @media (max-width:536px) {
+            .link-vid1 {
+                flex-direction: column;
+            }
+            .link-vid1 a {
+                margin-top: 10px;
+            }
+        }
+    </style>
+    <div class="code">
+        <div class="container-vid">
+            <div class="code-box">
+                <h1 style="color: #e54c21 ;">HTML</h1>
+                <pre>
+                <div class="pre-btn">Copy</div>
+                    <span class="line" style="color: gray;">
+<span><</span><span>!DOCTYPE HTML</span><span>></span>
+                    </span>
+                    <span class="line">
+<span><</span><span class='token'>html lang="en"</span><span>></span>
+                    </span>
+                    <span class="line">
+<<span class='token'>head</span>>
+    <<span>meta charset="UTF-8"</span>>
+    <<span>meta http-equiv="X-UA-Compatible" content="IE=edge"</span>>
+    <<span>meta name="viewport" content="width=device-width, initial-scale=1.0"</span>>
+    <<span>link rel="stylesheet" href="style.css"</span>>
+    <<span>link rel="preconnect" href="https://fonts.googleapis.com"</span>>
+    <<span>link rel="preconnect" href="https://fonts.gstatic.com" crossorigin</span>>
+    <<span>link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"</span>>
+    <<span>title</span>>Hover<<span>/title</span>>
+<<span class='token'>/head</span>>
+<<span class='token'>body</span>>
+    <<span class='token'>div</span> class = <span class="token">"container"</span>>
+        <<span class='token'>button</span> id = <span class='token'>"Hover-1"</span>>Hover Me<<span class='token'>/button</span>>
+        <<span class='token'>button</span> id = <span class='token'>"Hover-2"</span>>Hover Me<<span class='token'>/button</span>>
+    <<span class='token'>/div</span>>
+<<span class='token'>/body</span>>
+                    </span>
+                </pre>
+            </div>
+            <div class="code-box">
+                <h1 style="color: #60d9fa;">CSS</h1>
+                <pre>
+                    <div class="pre-btn">Copy</div>
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    color: orange;
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+/**********************************************************/
+
+button {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 17px;
+    scale: 2;
+    margin-top: 60px;
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px;
+    z-index: 2;
+}
+
+#Hover-1::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 0;
+    background-color: orange;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+#Hover-1:hover::before {
+    width: 100%;
+}
+
+#Hover-1:hover,
+#Hover-2:hover {
+    color: white;
+}
+
+#Hover-2 {
+    overflow: hidden;
+}
+
+#Hover-2::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: orange;
+    z-index: -1;
+    right: -30px;
+    top: -20px;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+#Hover-2:hover::before {
+    scale: 15;
+}
+                </pre>
+            </div>
+            <div id="code-box-color" class="code-box">
+                <h1 style="color: white;">Text</h1>
+                <div class="pre-btn" style="top: 93px;">Copy</div>
+                <input type="color" id="color">
+                <pre>
+Set HTML [*]
+    Make Button [*]
+
+Set CSS Style [*]
+    Make Before [*]
+    Make Hover Animation [*]
+
+The Algorithm ^_^
+    Add Button
+    Give Button Position Realtive
+    Add Before With CSS
+    Set Style To Before
+    Set Position absloute To Before
+    width 0 To 100%
+
+<span style='color: red !important;'>Your Turn</span>
+
+    <span class='token'>Make Hover ltr</span>
+
+    <span class='token'>Make Hover TtB</span>
+
+    <span class='token'>Make Hover BtT</span>
+
+    <span class='token'>Make Before && After
+        Before Go ltr
+        After Go rtl
+        Them had width 50%</span>
+
+The End
+
+Extra Proffisonal Task {
+    Add JAVASCRIPT
+}
+
+                </pre>
+            </div>
+            <div class="link-vid1">
+                <a href="https://www.youtube.com/watch?v=hayGscPVYPQ" target="_blank">
+                    <i class="fa-solid fa-link"></i>
+                </a>
+                <a class="solution-btn" style="cursor: pointer;">
+                    See Solution
+                </a>
+            </div>
+            <div class="solution" style="display: none;">
+                <div class="task">
+                    <h1 style="padding-bottom: 10px;">Task 1 : ltr (With Your Self)</h1>
+                </div>
+                <div class="task" id="active-task">
+                    <h1>Task 2 : TtB (Top To Bottom)</h1>
+                    <div class="code-box">
+                <h1 style="color: #e54c21 ;">HTML</h1>
+                <pre>
+                <div class="pre-btn">Copy</div>
+                    <span class="line" style="color: gray;">
+<span><</span><span>!DOCTYPE HTML</span><span>></span>
+                    </span>
+                    <span class="line">
+<span><</span><span class='token'>html lang="en"</span><span>></span>
+                    </span>
+                    <span class="line">
+<<span class='token'>head</span>>
+    <<span>meta charset="UTF-8"</span>>
+    <<span>meta http-equiv="X-UA-Compatible" content="IE=edge"</span>>
+    <<span>meta name="viewport" content="width=device-width, initial-scale=1.0"</span>>
+    <<span>link rel="stylesheet" href="style.css"</span>>
+    <<span>link rel="preconnect" href="https://fonts.googleapis.com"</span>>
+    <<span>link rel="preconnect" href="https://fonts.gstatic.com" crossorigin</span>>
+    <<span>link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet"</span>>
+    <<span>title</span>>Hover<<span>/title</span>>
+<<span class='token'>/head</span>>
+<<span class='token'>body</span>>
+    <<span class='token'>div</span> class = <span class="token">"container"</span>>
+        <<span class='token'>button</span> id = <span class='token'>"Hover-1"</span>>Hover Me<<span class='token'>/button</span>>
+    <<span class='token'>/div</span>>
+<<span class='token'>/body</span>>
+                    </span>
+                </pre>
+            </div>
+            <div class="code-box">
+                <h1 style="color: #60d9fa;">CSS</h1>
+                <pre>
+                    <div class="pre-btn">Copy</div>
+.container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 30px;
+    padding-top: 50px;
+    color: orange;
+}
+
+body {
+    background-color: black;
+    font-family: 'Open Sans' , sans-serif;
+}
+
+/**********************************************************/
+
+button {
+    position: relative;
+    width: 100px;
+    margin: 0 auto;
+    font-size: 17px;
+    scale: 2;
+    margin-top: 60px;
+    background: transparent;
+    color: orange;
+    border: 1px solid orange;
+    padding: 10px;
+    z-index: 2;
+}
+
+#Hover-1::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 100%;
+    background-color: orange;
+    z-index: -1;
+    left: 0;
+    top: 0;
+    transition: 0.4s;
+}
+
+#Hover-1:hover::before {
+    height: 100%;
+}
+
+#Hover-1:hover {
+    color: white;
+}
+
+
+                </pre>
+            </div>
+                </div>
+                <div class="task">
+                    <h1>Task 3 : BtT (With Your Self)</h1>
+                </div>
+                <div style="display: inline-block;" class="task">
+                    <h1 style="color: var(--main-color);">The link Task : <a target="_blank" href="https://www.youtube.com/watch?v=beupvgBfkrM&list=PLDoPjvoNmBAxuCSp2_-9LurPqRVwketnc&index=9" style="border: 1px solid #ffcd00; color: #ffcd00; padding: 10px;">Task</a> </h1>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/main2.js"></script>
+    <script src="js/main3.js"></script>
+</body>
